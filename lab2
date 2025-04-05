@@ -1,0 +1,125 @@
+#include<stdio.h>
+#include <stdlib.h>
+#include<string.h>
+
+#define maxsenha100
+
+ typedef struct{
+	char tipo;
+	int num;
+	int consumuda;
+}senha
+
+ senha senhas(maxsenha){
+	int totalsenha=0;
+	int contador=121;
+}
+  void inserirNormal(){
+ if(totalsenha<=maxsenha){
+	printf("limite atingido\n");
+	return;
+}
+ senha[totalsenha].tipo='n';
+ senha[totalsenha].num=contador;
+ senha[totalsenha],consumida=0;
+ 
+ printf("vc recebeu a senha normal n N%d \n",contador);
+
+ contador++;
+ totalsenha++;
+
+}
+void inserirPrioridade(){
+	if(totalsenha<=maxsenha){
+	printf("limite atingido\n");
+	return;
+}
+ senha[totalsenha].tipo='n';
+ senha[totalsenha].num=contador;
+ senha[totalsenha],consumida=0;
+ 
+ printf("vc recebeu a senha prioridade n P%d \n",contador);
+
+ contador++;
+ totalsenha++;
+
+}
+void consumirSenha(){
+	for(int =i;i<=totalsenha;i++){
+	if(senha[i].consumida== 0 && senha[i].tipo=='p'){
+		senha[i].consumida=1;
+		printf("senha prioritaria p%d consumida\n",senha[i]numero)]
+		return;
+	}
+   }
+
+   for(int =i;i<=totalsenha;i++){
+	if(senha[i].consumida== 0 && senha[i].tipo=='n'){
+		senha[i].consumida=1;
+		printf("senha prioritaria n%d consumida\n",senha[i]numero)]
+		return;
+   	
+   }
+
+}
+
+printf("nenhuma senha disponivel");
+
+
+}
+
+
+
+
+void mostrarmenu(){
+printf("selecione uma das opçpes");
+printf("n-nova senha normal\n");
+printf("p-nova senha prioridade\n");
+printf("c-consumir proxima senha\n");
+printf("s-sair do programa\n);
+printf("v-vizualizar todas as senhas\n);
+printf("escolha:\n);
+}
+
+
+
+
+
+ int main(){
+ char opçao;
+do{
+mostrarmenu();
+scanf("%c",&opçao);
+
+switch(opçao){
+
+
+	case N:
+	case n:
+      inserirNormal();
+	break;
+
+   case P:
+   case p:
+       inserirPrioridade();
+ break;
+
+ case C:
+ case c:
+    consumirSenha();
+break;
+
+ case S:
+ case s:
+   printf("saindo...\n");
+break;
+
+
+ defalt:
+  printf("opçao invalida\n");
+  breal;
+}
+}while(opçao != 'S' && opçao!='s');
+
+ return 0;
+}. 
